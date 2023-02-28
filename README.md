@@ -39,3 +39,9 @@ Din lærer kigger dit pull-request igennem, og hvis du blot får et godkendt/app
 Hvis din lærer sender et godkendt/approved tilbage, men også tilknytter en kommentar, er det måske for at gøre opmærksom på en detalje du let kan forbedre. Du behøver ikke at lave en ny pull request.
 
 Hvis du får en anmodning tilbage fra din lærer om at udføre ændringer, skal du implementere ændringerne/løse problemet og lave en ny pull-request. 
+
+
+queryselctor:
+
+skrives:
+const wrap = document.querySelector$("#wrapper");
