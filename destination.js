@@ -32,9 +32,14 @@ fetch(`data/${idUrlParam}.json`)
     <h4>${data.subtitle}</h4>
     <h5>${data.text}</h5>
     <h6>"Facilities</h6>
-    <ul class="faci-list">
-    </ul>
     `
+    let faciList = document.createElement("ul");
+    faciList.classList.add("faciList")
+
+    card.append(faciList);
+
+    
+
     /*  let button = document.createElement("img");
     button.classList = "heartButton"
     let buttonText = document.createElement("p");
