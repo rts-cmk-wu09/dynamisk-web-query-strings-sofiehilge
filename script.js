@@ -26,7 +26,6 @@ fetch('./data/destinations.json').then((response) => {//curly brackets er kun nÃ
         <div class="image-text">
         <i class="fa-solid fa-heart"></i>
         <p>more</p>
-        
         </div>
         </a>
         

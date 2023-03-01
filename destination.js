@@ -31,10 +31,21 @@ fetch(`data/${idUrlParam}.json`)//skal være en template litteral for at være d
     <h2>${data.destination}</h2>
     <h3>${data.title}</h3>
     <h4>${data.subtitle}</h4>
+    <div class="facility-text">
     <h5>${data.text}</h5>
     <h6>Facilities</h6>
+    </div>
     `
-    let faciList = document.createElement("ul");
+
+    /* VIRKER IKKE!!!! */
+    /* data.facilities.forEach((element =>{
+      const faciList = document.createElement("li")
+      descrWrapper.append(faciList)
+      item.innerHTML = `
+      <li>data/${destination.facilities}</li>
+      `
+    })) */
+   /*  let faciList = document.createElement("ul");
     faciList.classList.add("faciList")
 
     data.facilities.forEach((element) => {
@@ -43,9 +54,10 @@ fetch(`data/${idUrlParam}.json`)//skal være en template litteral for at være d
 
       faciList.append(listItem);
       descrWrapper.append(faciList);
+     */
     
   });
-    })
+    
 
     
 

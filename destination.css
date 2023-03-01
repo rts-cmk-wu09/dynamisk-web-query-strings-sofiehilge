@@ -12,7 +12,7 @@ html, body, figure{/* hvis du gør dette på * skal resette den på dine p-tags 
     justify-content: center;
     align-items: center;
     
-    width: 100vw;
+    width: 90vw;
     font-family: var(--font-family);
 }
 
@@ -32,16 +32,15 @@ figure{
 }
 
 img{
-    width: 712px;
-    height: 832px;
-
+    max-width: 100%;
+    height: auto;
     border-radius: 5%;
-  
+    margin: 0 auto;
+    display: block;
 }
 
 .cardText{
     font-family: var(--font-family);
-    text-align: center;
     width: 50vw;
 }
 
@@ -49,19 +48,31 @@ h2{
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 100;
+    text-align: center;
 }
 
 h3{
     font-size: 25px;
     font-weight: 100; 
+    text-align: center;
 }
 
 h4{
     font-size: 15px;
     font-weight: 100; 
+    text-align: center;
+}
+
+.facility-text{
+    margin: var(--margin-left)
 }
 
 h5{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+h6{
     font-size: 15px;
     font-weight: 100;
 }
