@@ -1,11 +1,11 @@
 const queryString = window.location.search;
 
-const urlParams = new URLSearchParams(queryString);
+const urlParams = new URLSearchParams(queryString);//søger parametre
 
 const idUrlParam = urlParams.get("id");
 
 /* Insert url params id i fetch!! */
-fetch(`data/${idUrlParam}.json`)
+fetch(`data/${idUrlParam}.json`)//skal være en template litteral for at være dynamisk
   .then((response) => {
     return response.json();
   })

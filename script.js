@@ -13,9 +13,9 @@ document.querySelector("body").innerHTML +=`
 
 
 
-fetch('./data/destinations.json').then((response) => {
+fetch('./data/destinations.json').then((response) => {//curly brackets er kun nødventidgt ved flere linjer, for at definerer scopet
     return response.json();
-}).then(data => {
+}).then(data => { //data er en variable som indeholder dataen.
     const list = document.querySelector('#destination-list')
     data.destinations.forEach(destination => {
         const item = document.createElement("li")
@@ -23,7 +23,11 @@ fetch('./data/destinations.json').then((response) => {
         item.innerHTML = `
         <a href = "destination.html?id=${destination.id}">
         <img src="img/${destination.image}">
-        <p>${destination.title}</p>
+        <div class="image-text">
+        <i class="fa-solid fa-heart"></i>
+        <p>more</p>
+        
+        </div>
         </a>
         
         `        
