@@ -18,12 +18,13 @@ fetch(`data/${idUrlParam}.json`)//skal være en template litteral for at være d
     figure.innerHTML = `
     <img src="img/${data.image}">
     <div class="heart">
-    <button>heart</button>
+    <i class="fa-solid fa-heart"></i>
     <p>Favorite</p>
     </div>
     `;
 
     let descrWrapper = document.createElement("div");
+    descrWrapper.classList = "cardText";
     card.append(descrWrapper);
 
     descrWrapper.innerHTML = `
@@ -31,26 +32,20 @@ fetch(`data/${idUrlParam}.json`)//skal være en template litteral for at være d
     <h3>${data.title}</h3>
     <h4>${data.subtitle}</h4>
     <h5>${data.text}</h5>
-    <h6>"Facilities</h6>
+    <h6>Facilities</h6>
     `
     let faciList = document.createElement("ul");
     faciList.classList.add("faciList")
 
-    card.append(faciList);
+    data.facilities.forEach((element) => {
+      let listItem = document.createElement("li");
+      listItem.textConcent = element;
+
+      faciList.append(listItem);
+      descrWrapper.append(faciList);
+    
+  });
+    })
 
     
 
-    /*  let button = document.createElement("img");
-    button.classList = "heartButton"
-    let buttonText = document.createElement("p");
-    buttonText.classList = "buttonText"
-    let image = document.createElement("img");
-    image.classList = "cardImage" */
-
-    /*   image.src = data.image
-    buttonText.textContent = 'Favorite'
-
-    card.append(image);
-    card.append(button);
-    card.append(buttonText); */
-  });

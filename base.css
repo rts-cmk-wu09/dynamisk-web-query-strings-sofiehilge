@@ -9,6 +9,7 @@ html, body, figure{/* hvis du gør dette på * skal resette den på dine p-tags 
 
 h1{
     font-family: var(--font-family);
+    color: var(--font-color);
     font-size: 3vw;
     font-weight: 900;
     margin-top: 50px;
@@ -21,7 +22,7 @@ h1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    
 }
 
 li{
@@ -31,8 +32,9 @@ li{
 a{
     display: flex;
     flex-direction: column;
+    padding: 10px;
     flex-basis: 100%;
-    width: 24vw;
+    width: 20vw;
     align-items: center;
     font-family: var(--font-family);
 }
@@ -56,11 +58,12 @@ a:link {
 .image-text{
     display: flex;
     align-items: center;
-    gap: 7vw;
-    background-color: #E31C5F;
+    gap: 14vw;
+    background-color: var(--font-color);
     /* border-radius: 5%; */
     margin: 3px 0 20px;
-    width: 180px
+    padding: 0 7px
+    
 }
 
 img{
@@ -71,10 +74,10 @@ img{
 }
 
 p{
-    color: black;
+    color: white;
     text-transform: uppercase;
 }
 .fa-heart{
-color: black
+color: white
 }
 
